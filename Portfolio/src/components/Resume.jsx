@@ -4,7 +4,7 @@ const Resume = () => {
     return (
         <section>
             <h2>Resume</h2>
-            <p> How to contact me</p>
+            <p> My Resume</p>
         </section>
     );
 };
