@@ -1,7 +1,6 @@
-import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import AboutMe from './components/About';
+import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
@@ -14,10 +13,10 @@ function App() {
             <div className="App">
                 <Header />
                 <Routes>
-                    <Route path="/" exact component={<AboutMe />} />
-                    <Route path="/portfolio" component={<Portfolio />} />
-                    <Route path="/contact" component={<Contact />}  />
-                    <Route path="/resume" component={<Resume />} />
+                    <Route path="/"  element={<About />} />
+                    <Route path="/portfolio" element={<Portfolio />} />
+                    <Route path="/contact" element={<Contact />}  />
+                    <Route path="/resume" element={<Resume />} />
                 </Routes>
                 <Footer />
             </div>
